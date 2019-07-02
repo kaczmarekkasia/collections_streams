@@ -1,0 +1,56 @@
+1. Stwórz kolejną (nową) klasę Main w której będziesz realizować poniższe polecenia.
+2. Stwórz klasę Programmer, która wygląda następująco:
+
+public class Programmer{
+    private Person person;
+    private List<String> languages;
+}
+
+Dodaj w niej konstruktory i getter+settery.
+
+3. W Mainie stwórz inicjalne kolekcje:
+
+Person person1 = new Person("Jacek", "Kowalski", 18, true);
+        Person person2 = new Person("Jacek", "Górski", 15, true);
+        Person person3 = new Person("Andżelika", "Dżoli", 25, false);
+        Person person4 = new Person("Wanda", "Ibanda", 12, false);
+        Person person5 = new Person("Marek", "Marecki", 17, true);
+        Person person6 = new Person("Johny", "Brawo", 25, true);
+        Person person7 = new Person("Stary", "Pan", 80, true);
+        Person person8 = new Person("Newbie", "Noob", 12, true);
+        Person person9 = new Person("Newbies", "Sister", 19, false);
+
+List<String> languages1 = Arrays.asList("Java;Cobol;Cpp;Lisp".split(";"));
+        List<String> languages2 = Arrays.asList("Java;Lisp".split(";"));
+        List<String> languages3 = Arrays.asList("Java;Cobol;Cpp;Lisp;C#".split(";"));
+        List<String> languages4 = Arrays.asList("C#;C;Cpp".split(";"));
+        List<String> languages5 = Arrays.asList("Java;Assembler;Scala;Cobol".split(";"));
+        List<String> languages6 = Arrays.asList("Java;Scala".split(";"));
+        List<String> languages7 = Arrays.asList("C#;C".split(";"));
+        List<String> languages8 = Collections.emptyList();
+        List<String> languages9 = Arrays.asList("Java");
+        Programmer programmer1 = new Programmer(person1, languages1);
+        Programmer programmer2 = new Programmer(person2, languages2);
+        Programmer programmer3 = new Programmer(person3, languages3);
+        Programmer programmer4 = new Programmer(person4, languages4);
+        Programmer programmer5 = new Programmer(person5, languages5);
+        Programmer programmer6 = new Programmer(person6, languages6);
+        Programmer programmer7 = new Programmer(person7, languages7);
+        Programmer programmer8 = new Programmer(person8, languages8);
+        Programmer programmer9 = new Programmer(person9, languages9);
+        List<Programmer> programmers = Arrays.asList(programmer1, programmer2, programmer3, programmer4, programmer5, programmer6, programmer7, programmer8, programmer9);
+        System.out.println(programmers);
+
+4. Wykonaj polecenia:
+
+a) uzyskaj listę programistów, którzy są mężczyznami
+b) uzyskaj listę niepełnoletnich programistów (obydwóch płci), którzy piszą w Cobolu
+c) uzyskaj listę programistów, którzy znają więcej, niż jeden język programowania
+d) uzyskaj listę programistek, które piszą w Javie i Cpp
+e) uzyskaj listę męskich imion
+f) uzyskaj set wszystkich języków opanowanych przez programistów
+g) uzyskaj listę nazwisk programistów, którzy znają więcej, niż dwa języki
+h) sprawdź, czy istnieje chociaż jedna osoba, która nie zna żadnego języka
+i)* uzyskaj ilość wszystkich języków opanowanych przez programistki
+j) wypisz informację czy jest programista w Javie który ma na nazwisko Brawo (matchAny)
+k) wypisz najrzadziej występujący język/języki (listę, bo mogą być "tak samo mało popularne")
